@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oden-pretty-map/precache-manifest.530fe3e08e8804e67be7324daed7afcc.js"
+  "/oden-pretty-map/precache-manifest.4490c94bec720e02f1ee8738d1dde1ad.js"
 );
 
 self.addEventListener('message', (event) => {
