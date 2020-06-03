@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4ad4b17a227129c6d4fc3790441b1a6",
+    "revision": "db1dd068ebeacde3951dae2f23db6272",
     "url": "/oden-pretty-map/index.html"
   },
   {
-    "revision": "64da0ba023f1afc3a3c7",
+    "revision": "e2949acbe888dc87eccc",
     "url": "/oden-pretty-map/static/css/main.e8e66bfa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oden-pretty-map/static/js/2.5b4a26ab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64da0ba023f1afc3a3c7",
-    "url": "/oden-pretty-map/static/js/main.a66757c2.chunk.js"
+    "revision": "e2949acbe888dc87eccc",
+    "url": "/oden-pretty-map/static/js/main.8843f412.chunk.js"
   },
   {
     "revision": "c38ad6e1310b3de6ec1b",
