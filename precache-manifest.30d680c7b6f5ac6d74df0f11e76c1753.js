@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7d80b644ff1e020d6e2f0ce086b349e",
+    "revision": "c98338da321226945d273dc0082719be",
     "url": "/oden-pretty-map/index.html"
   },
   {
