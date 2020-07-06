@@ -2,6 +2,7 @@ import React from "react";
 import mapboxgl from "mapbox-gl";
 
 import BuildingDetail from "./BuildingDetail";
+import DistrictDetail from "./DistrictDetail";
 import "./PrettyMap.css";
 
 mapboxgl.accessToken =
@@ -34,10 +35,11 @@ class PrettyMap extends React.Component {
     // Initialize map
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: "mapbox://styles/oleksiipasichnyi/ckbjnkd3k2jai1iljl8ymszc1",
+      style: "mapbox://styles/oleksiipasichnyi/ckbvyqy4n0m911ipspg10k7sm",
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     });
+    console.log(this.state);
 
     // Adjust view after moving map
     map.on("move", () => {
@@ -62,11 +64,32 @@ class PrettyMap extends React.Component {
         .addTo(map);
     });
 
+    // Show popup with district properties
+    map.on("click", "Districts", function (e) {
+      new mapboxgl.Popup({ closeButton: true })
+        .setLngLat(e.lngLat)
+        .setHTML(DistrictDetail(e.features[0].properties))
+        .addTo(map);
+
+    });
+    map.on("click", "Municipalities", function (e) {
+      new mapboxgl.Popup({ closeButton: true })
+        .setLngLat(e.lngLat)
+        .setHTML(DistrictDetail(e.features[0].properties))
+        .addTo(map);
+    });
+
     // Change the cursor to a pointer when the mouse is over the states layer
     map.on("mouseenter", "energiklass", function () {
       map.getCanvas().style.cursor = "pointer";
     });
     map.on("mouseenter", "byggnadsaldre", function () {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseenter", "Districts", function () {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseenter", "Municipalities", function () {
       map.getCanvas().style.cursor = "pointer";
     });
 
@@ -75,6 +98,12 @@ class PrettyMap extends React.Component {
       map.getCanvas().style.cursor = "";
     });
     map.on("mouseleave", "byggnadsaldre", function () {
+      map.getCanvas().style.cursor = "";
+    });
+    map.on("mouseleave", "Districts", function () {
+      map.getCanvas().style.cursor = "";
+    });
+    map.on("mouseleave", "Municipalities", function () {
       map.getCanvas().style.cursor = "";
     });
 
@@ -149,7 +178,7 @@ class PrettyMap extends React.Component {
         <div className="sidebar-left">
           <div>
             <i className="eye icon"></i>
-            Oden [Stockholm & Uppsala]
+            Oden Sverige [utveckling]
             <br />
             Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom:{" "}
             {this.state.zoom}

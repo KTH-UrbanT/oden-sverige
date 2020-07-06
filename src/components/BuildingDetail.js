@@ -45,62 +45,27 @@ const FetchColor = (ek = null) => {
   var color;
 
   switch(ek){
-    case 'A': color= '#2166ac';
+    case 'A': color= '#4575b4';
       break;
-    case 'B': color= '#67a9cf';
+    case 'B': color= '#91bfdb';
       break;
-    case 'C': color= '#d1e5f0';
+    case 'C': color= '#e0f3f8';
       break;
-    case 'D': color= '#f7f7f7';
+    case 'D': color= '#ffffbf';
       break;
-    case 'E': color= '#fddbc7';
+    case 'E': color= '#fee090';
       break;
-    case 'F': color= '#ef8a62';
+    case 'F': color= '#fc8d59';
       break;
-    case 'G': color= '#b2182b';
+    case 'G': color= '#d73027';
       break;
-    default: color= '#b2182b';
+    default: color= '#d73027';
   }
   return color;
 }
 
 const InvertHeader = (ek = null) => {
   return ek==='C'||ek==='D'||ek==='E' ? '' : 'inverted';
-}
-
-const ClassFetchColor = (ek = null) => {
-  var color;
-
-  switch(ek){
-    case 'A': color= '#ffffb2';
-      break;
-    case 'B': color= '#fed976';
-      break;
-    case 'C': color= '#feb24c';
-      break;
-    case 'D': color= '#fd8d3c';
-      break;
-    case 'E': color= '#fc4e2a';
-      break;
-    case 'F': color= '#e31a1c';
-      break;
-    case 'G': color= '#b10026';
-      break;
-    default: color= '#b10026';
-  }
-  return color;
-}
-
-const NumericFetchColor = (value = null) => {
-  if (value<75) {
-    return 'green';
-  } else if (value<106) {
-    return 'olive';
-  } else if (value<138) {
-    return 'yellow';
-  }  else if (value<169) {
-    return 'orange';
-  } else return 'red';
 }
 
 export default BuildingDetail;
