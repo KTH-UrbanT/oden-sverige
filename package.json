@@ -1,6 +1,6 @@
 {
-  "name": "oden-pretty-map",
-  "homepage": "http://pasichnyi.github.io/oden-pretty-map",
+  "name": "oden-sverige",
+  "homepage": "https://oden.urbant.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
