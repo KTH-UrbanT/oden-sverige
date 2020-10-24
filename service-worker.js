@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oden-sverige/precache-manifest.a6632523bf682eea92dd46f1d40886a1.js"
+  "/oden-sverige/precache-manifest.ad9d9e621119618ca88644e40ab6373e.js"
 );
 
 self.addEventListener('message', (event) => {

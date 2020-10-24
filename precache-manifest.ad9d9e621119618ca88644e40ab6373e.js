@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce070d3ec2f7fc506a23901dc9f2fbf3",
+    "revision": "a933ac4d637ec68a3ac74ef7d617da31",
     "url": "/oden-sverige/index.html"
   },
   {
-    "revision": "7bbee4564b52e66ba856",
+    "revision": "b90c314cbf732f3b6f3e",
     "url": "/oden-sverige/static/css/main.e8e66bfa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oden-sverige/static/js/2.f8c77ea1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bbee4564b52e66ba856",
-    "url": "/oden-sverige/static/js/main.9fb7dcdd.chunk.js"
+    "revision": "b90c314cbf732f3b6f3e",
+    "url": "/oden-sverige/static/js/main.57c52f0c.chunk.js"
   },
   {
     "revision": "5d4d08203451591426aa",
